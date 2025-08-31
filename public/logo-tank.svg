@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Tank cleaner logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="128" height="128" rx="20" fill="#ecfeff" />
+  <!-- Vacuum truck -->
+  <g transform="translate(12,52)">
+    <!-- Tank body -->
+    <rect x="22" y="10" width="56" height="26" rx="8" fill="url(#g)" />
+    <rect x="70" y="18" width="16" height="14" rx="3" fill="url(#g)" />
+    <!-- Cab -->
+    <path d="M10 34h18v-10c0-2-2-6-6-6h-8c-2 0-4 2-4 4v12z" fill="#0f766e" />
+    <rect x="14" y="22" width="8" height="6" rx="1" fill="#a7f3d0" />
+    <!-- Hose -->
+    <path d="M78 22c10 0 16 10 16 16 0 6-4 10-10 10h-8" fill="none" stroke="#0f766e" stroke-width="4" stroke-linecap="round" />
+    <circle cx="76" cy="48" r="4" fill="#0f766e" />
+    <!-- Wheels -->
+    <circle cx="28" cy="48" r="8" fill="#0f172a" />
+    <circle cx="28" cy="48" r="4" fill="#94a3b8" />
+    <circle cx="64" cy="48" r="8" fill="#0f172a" />
+    <circle cx="64" cy="48" r="4" fill="#94a3b8" />
+  </g>
+  <!-- Water drop mark -->
+  <path d="M96 22c8 10 12 16 12 22a12 12 0 1 1-24 0c0-6 4-12 12-22z" fill="url(#g)" opacity="0.9" />
+</svg>
