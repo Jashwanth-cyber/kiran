@@ -123,9 +123,9 @@ export default function Index() {
         <div id="contact">
           <h2 className="text-2xl font-bold">Contact</h2>
           <p className="mt-2 text-muted-foreground">
-            For questions or urgent requests, please book above or email us at{" "}
+            For questions or urgent requests, please book above or call us at
             <span className="font-medium">
-              {(import.meta as any).env?.VITE_OWNER_EMAIL || ""}
+               9849283153
             </span>
             .
           </p>
