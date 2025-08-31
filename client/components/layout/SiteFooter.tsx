@@ -3,7 +3,7 @@ export default function SiteFooter() {
     <footer className="border-t bg-muted/20">
       <div className="container mx-auto grid gap-4 px-4 py-10 sm:grid-cols-2 md:grid-cols-3">
         <div>
-          <h3 className="font-semibold">Thirumala Septic Tank Cleaners</h3>
+          <h3 className="font-semibold">Sri Thirumala Septic Tank Cleaners</h3>
           <p className="mt-2 text-sm text-muted-foreground">
             Professional septic tank cleaning in Uppal. Owner: Kishan.
           </p>
@@ -20,7 +20,7 @@ export default function SiteFooter() {
         </div>
       </div>
       <div className="border-t py-4 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Thirumala Septic Tank Cleaners. All rights reserved.
+        © {new Date().getFullYear()} Sri Thirumala Septic Tank Cleaners. All rights reserved.
       </div>
     </footer>
   );

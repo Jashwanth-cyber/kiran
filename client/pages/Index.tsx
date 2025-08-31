@@ -11,7 +11,7 @@ export default function Index() {
               Uppal • Owner: Kishan
             </span>
             <h1 className="text-balance text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
-              Thirumala Septic Tank Cleaners
+              Sri Thirumala Septic Tank Cleaners
             </h1>
             <p className="mt-4 max-w-prose text-muted-foreground">
               Reliable, hygienic, and on-time septic tank cleaning services in Uppal. We use modern equipment and safe practices to keep your home and business clean and odor-free.
