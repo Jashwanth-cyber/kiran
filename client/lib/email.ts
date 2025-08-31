@@ -67,9 +67,10 @@ export async function sendBookingEmails(payload: BookingPayload) {
   );
 
   // Send notification/reminder to owner if configured
-  const ownerPromise = TEMPLATE_ID_OWNER && OWNER_EMAIL
-    ? emailjs.send(SERVICE_ID, TEMPLATE_ID_OWNER, templateParams)
-    : Promise.resolve();
+  const ownerPromise =
+    TEMPLATE_ID_OWNER && OWNER_EMAIL
+      ? emailjs.send(SERVICE_ID, TEMPLATE_ID_OWNER, templateParams)
+      : Promise.resolve();
 
   await Promise.all([userPromise, ownerPromise]);
 }

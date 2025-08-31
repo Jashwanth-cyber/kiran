@@ -35,9 +35,7 @@ export default function BookingForm() {
     setLoading(true);
     try {
       await sendBookingEmails({ ...form });
-      toast.success(
-        "Booking submitted! A confirmation email has been sent.",
-      );
+      toast.success("Booking submitted! A confirmation email has been sent.");
       setForm({
         name: "",
         email: "",
@@ -58,16 +56,24 @@ export default function BookingForm() {
 
   return (
     <div className="w-full max-w-xl rounded-xl border bg-card p-6 shadow-sm">
-      {!(emailConfigStatus.hasPublicKey &&
+      {!(
+        emailConfigStatus.hasPublicKey &&
         emailConfigStatus.hasServiceId &&
-        emailConfigStatus.hasTemplateUser) && (
+        emailConfigStatus.hasTemplateUser
+      ) && (
         <div className="mb-4 rounded-md border border-destructive/40 bg-destructive/5 p-3 text-sm text-destructive">
-          Email notifications are not configured yet. Set VITE_EMAILJS_PUBLIC_KEY, VITE_EMAILJS_SERVICE_ID and VITE_EMAILJS_TEMPLATE_ID_BOOKING_USER.
+          Email notifications are not configured yet. Set
+          VITE_EMAILJS_PUBLIC_KEY, VITE_EMAILJS_SERVICE_ID and
+          VITE_EMAILJS_TEMPLATE_ID_BOOKING_USER.
         </div>
       )}
-      {!(emailConfigStatus.hasTemplateOwner && emailConfigStatus.hasOwnerEmail) && (
+      {!(
+        emailConfigStatus.hasTemplateOwner && emailConfigStatus.hasOwnerEmail
+      ) && (
         <div className="mb-4 rounded-md border border-amber-400/40 bg-amber-50 p-3 text-sm text-amber-700">
-          Owner reminders are not fully configured. Set VITE_EMAILJS_TEMPLATE_ID_BOOKING_OWNER and VITE_OWNER_EMAIL to notify the owner.
+          Owner reminders are not fully configured. Set
+          VITE_EMAILJS_TEMPLATE_ID_BOOKING_OWNER and VITE_OWNER_EMAIL to notify
+          the owner.
         </div>
       )}
 
@@ -158,7 +164,8 @@ export default function BookingForm() {
           {loading ? "Booking..." : "Book Now"}
         </Button>
         <p className="text-center text-xs text-muted-foreground">
-          By booking, you agree to be contacted via email for confirmations and reminders.
+          By booking, you agree to be contacted via email for confirmations and
+          reminders.
         </p>
       </form>
     </div>

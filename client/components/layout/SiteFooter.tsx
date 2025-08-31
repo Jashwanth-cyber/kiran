@@ -15,12 +15,16 @@ export default function SiteFooter() {
         <div>
           <h3 className="font-semibold">Contact</h3>
           <p className="mt-2 text-sm text-muted-foreground">
-            Email: <span className="select-all">{(import.meta as any).env?.VITE_OWNER_EMAIL || ""}</span>
+            Email:{" "}
+            <span className="select-all">
+              {(import.meta as any).env?.VITE_OWNER_EMAIL || ""}
+            </span>
           </p>
         </div>
       </div>
       <div className="border-t py-4 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Sri Thirumala Septic Tank Cleaners. All rights reserved.
+        © {new Date().getFullYear()} Sri Thirumala Septic Tank Cleaners. All
+        rights reserved.
       </div>
     </footer>
   );

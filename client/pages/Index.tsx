@@ -14,21 +14,41 @@ export default function Index() {
               Sri Thirumala Septic Tank Cleaners
             </h1>
             <p className="mt-4 max-w-prose text-muted-foreground">
-              Reliable, hygienic, and on-time septic tank cleaning services in Uppal. We use modern equipment and safe practices to keep your home and business clean and odor-free.
+              Reliable, hygienic, and on-time septic tank cleaning services in
+              Uppal. We use modern equipment and safe practices to keep your
+              home and business clean and odor-free.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <a href="#booking" className="inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow hover:bg-primary/90">
+              <a
+                href="#booking"
+                className="inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow hover:bg-primary/90"
+              >
                 Book Now
               </a>
-              <a href="#services" className="text-sm font-semibold text-primary hover:underline">
+              <a
+                href="#services"
+                className="text-sm font-semibold text-primary hover:underline"
+              >
                 View Services
               </a>
             </div>
             <ul className="mt-8 grid grid-cols-1 gap-3 text-sm text-muted-foreground sm:grid-cols-2">
-              <li className="flex items-center gap-2"><span className="inline-block size-2 rounded-full bg-primary"></span> Same-day slots (subject to availability)</li>
-              <li className="flex items-center gap-2"><span className="inline-block size-2 rounded-full bg-primary"></span> Trained technicians</li>
-              <li className="flex items-center gap-2"><span className="inline-block size-2 rounded-full bg-primary"></span> Transparent pricing</li>
-              <li className="flex items-center gap-2"><span className="inline-block size-2 rounded-full bg-primary"></span> Eco-friendly disposal</li>
+              <li className="flex items-center gap-2">
+                <span className="inline-block size-2 rounded-full bg-primary"></span>{" "}
+                Same-day slots (subject to availability)
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="inline-block size-2 rounded-full bg-primary"></span>{" "}
+                Trained technicians
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="inline-block size-2 rounded-full bg-primary"></span>{" "}
+                Transparent pricing
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="inline-block size-2 rounded-full bg-primary"></span>{" "}
+                Eco-friendly disposal
+              </li>
             </ul>
           </div>
           <div className="relative">
@@ -47,7 +67,8 @@ export default function Index() {
       <section id="services" className="container mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold">Our Services</h2>
         <p className="mt-2 max-w-prose text-muted-foreground">
-          Complete septic solutions for homes, apartments, and commercial properties in Uppal.
+          Complete septic solutions for homes, apartments, and commercial
+          properties in Uppal.
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <div className="rounded-xl border bg-card p-6 shadow-sm">
@@ -77,7 +98,8 @@ export default function Index() {
           <div className="mx-auto mb-8 max-w-xl text-center">
             <h2 className="text-2xl font-bold">Book a Service</h2>
             <p className="mt-2 text-muted-foreground">
-              Select your preferred date and time. You will receive a confirmation email; the owner will be notified.
+              Select your preferred date and time. You will receive a
+              confirmation email; the owner will be notified.
             </p>
           </div>
           <div className="flex justify-center">
@@ -87,17 +109,25 @@ export default function Index() {
       </section>
 
       {/* About/Contact */}
-      <section id="about" className="container mx-auto grid gap-10 px-4 py-16 md:grid-cols-2">
+      <section
+        id="about"
+        className="container mx-auto grid gap-10 px-4 py-16 md:grid-cols-2"
+      >
         <div>
           <h2 className="text-2xl font-bold">About Us</h2>
           <p className="mt-2 text-muted-foreground">
-            Thirumala Septic Tank Cleaners is locally owned and operated by Kishan, serving Uppal with trusted service and fair pricing.
+            Thirumala Septic Tank Cleaners is locally owned and operated by
+            Kishan, serving Uppal with trusted service and fair pricing.
           </p>
         </div>
         <div id="contact">
           <h2 className="text-2xl font-bold">Contact</h2>
           <p className="mt-2 text-muted-foreground">
-            For questions or urgent requests, please book above or email us at <span className="font-medium">{(import.meta as any).env?.VITE_OWNER_EMAIL || ""}</span>.
+            For questions or urgent requests, please book above or email us at{" "}
+            <span className="font-medium">
+              {(import.meta as any).env?.VITE_OWNER_EMAIL || ""}
+            </span>
+            .
           </p>
         </div>
       </section>
