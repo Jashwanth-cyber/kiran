@@ -55,7 +55,7 @@ export async function sendBookingEmails(payload: BookingPayload) {
     booking_time: payload.time,
     booking_notes: payload.notes ?? "",
     owner_email: OWNER_EMAIL ?? "",
-    business_name: "Thirumala Septic Tank Cleaners",
+    business_name: "Sri Thirumala Septic Tank Cleaners",
     business_location: "Uppal",
   } as Record<string, string>;
 
