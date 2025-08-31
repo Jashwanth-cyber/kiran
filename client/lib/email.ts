@@ -10,16 +10,13 @@ export type BookingPayload = {
   notes?: string;
 };
 
-function getEnv(name: string): string | undefined {
-  const value = (import.meta as any).env?.[name] as string | undefined;
-  return value && value.length > 0 ? value : undefined;
-}
 
-const PUBLIC_KEY = getEnv("VITE_EMAILJS_PUBLIC_KEY");
-const SERVICE_ID = getEnv("VITE_EMAILJS_SERVICE_ID");
-const TEMPLATE_ID_USER = getEnv("VITE_EMAILJS_TEMPLATE_ID_BOOKING_USER");
-const TEMPLATE_ID_OWNER = getEnv("VITE_EMAILJS_TEMPLATE_ID_BOOKING_OWNER");
-const OWNER_EMAIL = getEnv("VITE_OWNER_EMAIL");
+
+const PUBLIC_KEY = "ogSx9PjRjeop65dga";
+const SERVICE_ID = "service_9plihkm";
+const TEMPLATE_ID_USER = "template_pp1yqke";
+const TEMPLATE_ID_OWNER = "template_4fpz52o";
+const OWNER_EMAIL = "thirumalaseptictankcleaners@gmail.com";
 
 export const emailConfigStatus = {
   hasPublicKey: Boolean(PUBLIC_KEY),
