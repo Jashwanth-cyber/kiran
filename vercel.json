@@ -9,4 +9,13 @@
   "routes": [
     { "src": "/(.*)", "dest": "/client/dist/index.html" }
   ]
+  ,
+
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/server.js" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+
+
 }
+
