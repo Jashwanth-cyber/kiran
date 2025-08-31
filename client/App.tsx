@@ -37,7 +37,9 @@ const App = () => (
 );
 
 const container = document.getElementById("root")!;
-const existing = (globalThis as any).__app_root as ReturnType<typeof createRoot> | undefined;
+const existing = (globalThis as any).__app_root as
+  | ReturnType<typeof createRoot>
+  | undefined;
 const root = existing ?? createRoot(container);
 root.render(<App />);
 (globalThis as any).__app_root = root;
