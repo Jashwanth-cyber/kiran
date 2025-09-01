@@ -61,21 +61,21 @@ export default function BookingForm() {
         emailConfigStatus.hasServiceId &&
         emailConfigStatus.hasTemplateUser
       ) && (
-        <div className="mb-4 rounded-md border border-destructive/40 bg-destructive/5 p-3 text-sm text-destructive">
-          Email notifications are not configured yet. Set
-          VITE_EMAILJS_PUBLIC_KEY, VITE_EMAILJS_SERVICE_ID and
-          VITE_EMAILJS_TEMPLATE_ID_BOOKING_USER.
-        </div>
-      )}
+          <div className="mb-4 rounded-md border border-destructive/40 bg-destructive/5 p-3 text-sm text-destructive">
+            Email notifications are not configured yet. Set
+            VITE_EMAILJS_PUBLIC_KEY, VITE_EMAILJS_SERVICE_ID and
+            VITE_EMAILJS_TEMPLATE_ID_BOOKING_USER.
+          </div>
+        )}
       {!(
         emailConfigStatus.hasTemplateOwner && emailConfigStatus.hasOwnerEmail
       ) && (
-        <div className="mb-4 rounded-md border border-amber-400/40 bg-amber-50 p-3 text-sm text-amber-700">
-          Owner reminders are not fully configured. Set
-          VITE_EMAILJS_TEMPLATE_ID_BOOKING_OWNER and VITE_OWNER_EMAIL to notify
-          the owner.
-        </div>
-      )}
+          <div className="mb-4 rounded-md border border-amber-400/40 bg-amber-50 p-3 text-sm text-amber-700">
+            Owner reminders are not fully configured. Set
+            VITE_EMAILJS_TEMPLATE_ID_BOOKING_OWNER and VITE_OWNER_EMAIL to notify
+            the owner.
+          </div>
+        )}
 
       <form onSubmit={onSubmit} className="space-y-4">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
