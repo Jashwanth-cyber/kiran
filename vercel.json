@@ -6,16 +6,8 @@
       "config": { "distDir": "client/dist" }
     }
   ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/client/dist/index.html" }
-  ]
-  ,
-
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/server.js" },
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/(.*)", "destination": "/client/dist/index.html" }
   ]
-
-
 }
-
