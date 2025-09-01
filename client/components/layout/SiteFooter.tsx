@@ -17,7 +17,7 @@ export default function SiteFooter() {
           <p className="mt-2 text-sm text-muted-foreground">
             Email:{" "}
             <span className="select-all">
-              {(import.meta as any).env?.VITE_OWNER_EMAIL || ""}
+              thirumalaseptictankcleaners@gmail.com
             </span>
           </p>
         </div>
